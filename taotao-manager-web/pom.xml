@@ -5,18 +5,16 @@
     <artifactId>taotao-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.taotao</groupId>
   <artifactId>taotao-manager-web</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <properties>
   	<webVersion>3.0</webVersion>
   </properties>
   
   <dependencies>
-  <dependency>
-			<groupId>com.taotao.common</groupId>
-			<artifactId>taotao-common</artifactId>
+ 	<dependency>
+			<groupId>com.taotao.manage</groupId>
+			<artifactId>taotao-manage-service</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<!-- JSP相关 -->
