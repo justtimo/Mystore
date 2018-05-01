@@ -34,5 +34,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/taotao-manager-interface"/>
+	<classpathentry kind="src" path="/taotao-manager-dao"/>
+	<classpathentry kind="src" path="/taotao-manager-pojo"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

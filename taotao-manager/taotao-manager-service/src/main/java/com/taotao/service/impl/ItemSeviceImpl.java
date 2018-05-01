@@ -1,5 +1,7 @@
 package com.taotao.service.impl;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.taotao.mapper.TbItemMapper;
@@ -7,7 +9,7 @@ import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 
 public class ItemSeviceImpl implements ItemService{
-  @Autowired
+  @Resource
   private TbItemMapper itemMapper;
 
 
