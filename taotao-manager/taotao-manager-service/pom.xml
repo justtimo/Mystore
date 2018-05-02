@@ -7,11 +7,20 @@
 	</parent>
   <artifactId>taotao-manager-service</artifactId>
   <packaging>war</packaging>
-  <properties>
-  	<webVersion>3.0</webVersion>
-  </properties>
+  
   
   <dependencies>
+  <dependency>
+			<groupId>com.taotao</groupId>
+			<artifactId>taotao-manager-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.taotao</groupId>
+			<artifactId>taotao-manager-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>

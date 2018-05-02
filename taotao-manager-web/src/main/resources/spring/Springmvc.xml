@@ -8,16 +8,21 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-	<!-- 配置包扫描器，带有@controller注解的累哦 -->
-	<context:component-scan base-package="com.taotao.controller" />
+	
 	<!-- 配置注解驱动 -->
 	<mvc:annotation-driven />
+	
 	<!-- 视图解析器-->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>	
+	
+	<!-- 配置包扫描器，带有@controller注解的累哦 -->
+	<context:component-scan base-package="com.taotao.controller" />
+	
+	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.203.131:2181"/>	

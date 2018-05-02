@@ -1,7 +1,6 @@
 package com.taotao.controller;
 
-import javax.annotation.Resource;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,7 +16,7 @@ import com.taotao.service.ItemService;
  * @version 1.0
  */
 public class ItemController {
-  @Resource
+  @Autowired
   private ItemService itemService;
   @RequestMapping("/item/{itemId}")
   @ResponseBody
